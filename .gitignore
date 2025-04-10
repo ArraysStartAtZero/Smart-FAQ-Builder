@@ -8,8 +8,6 @@ Desktop.ini
 .vscode/
 *.sublime-project
 *.sublime-workspace
-*.komodoproject
-.komodotools/
 *.code-workspace
 
 # Node modules and build files
@@ -38,14 +36,12 @@ composer.phar
 .env.*
 !.env.example
 
-# Test configuration and coverage
+# Test files
 phpunit.xml
 .phpunit.result.cache
-coverage/
 
 # Temporary files
 *.tmp
 *.bak
 *.swp
-*~.nib
-*.zip 
+*~ 
