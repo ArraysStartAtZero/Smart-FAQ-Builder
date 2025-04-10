@@ -1,0 +1,72 @@
+.sfb-faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+.sfb-faq-item {
+    margin-bottom: 1rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+}
+
+.sfb-faq-item:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.sfb-faq-question {
+    padding: 1rem;
+    background: #f8f9fa;
+    cursor: pointer;
+    font-weight: 600;
+    color: #333;
+    position: relative;
+    padding-right: 2.5rem;
+}
+
+.sfb-faq-question::after {
+    content: '+';
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    color: #666;
+    transition: transform 0.3s ease;
+}
+
+.sfb-faq-item.active .sfb-faq-question::after {
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.sfb-faq-answer {
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    background: #fff;
+}
+
+.sfb-faq-item.active .sfb-faq-answer {
+    padding: 1rem;
+    max-height: 1000px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sfb-faq-container {
+        padding: 0 1rem;
+    }
+    
+    .sfb-faq-question {
+        font-size: 0.95rem;
+    }
+    
+    .sfb-faq-answer {
+        font-size: 0.9rem;
+    }
+} 
