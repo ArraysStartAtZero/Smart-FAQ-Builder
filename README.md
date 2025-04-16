@@ -67,7 +67,7 @@ This project is licensed under the GPL v2 or later - see the [LICENSE](LICENSE) 
 
 ## Author
 
-Your Name
+Arraysstartatzero
 
 ## Support
 
